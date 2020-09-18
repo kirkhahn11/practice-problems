@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Decimal Counter</title>
+  </head>
+
+  <body>
+
+    <script>
+      function decimalPlaceCounter(stringNumber) {
+        var count = 0
+        var deci = '.'
+        for(var i = 0; i < stringNumber.length; i++){
+          if(stringNumber.indexOf('.') === -1) {
+            count = 0
+          }
+            else if (deci !== stringNumber[i]) {
+            count -= 1
+          } else if (deci === stringNumber[i]) {
+            count += i
+          }
+        }
+        return Math.abs(count)
+      }
+    </script>
+  </body>
+</html>
