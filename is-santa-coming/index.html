@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is Santa Coming</title>
+  </head>
+  <body>
+
+    <script>
+      var d = new Date(1992, 4, 2)
+      console.log(d.getMonth())
+      function isSantaComing(dateObject) {
+        if(dateObject.getMonth() === 11 && dateObject.getDate() === 24) {
+          return true
+        } else {
+          return false
+        }
+      }
+    </script>
+  </body>
+</html>
