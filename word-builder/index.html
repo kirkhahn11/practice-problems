@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Builder</title>
+  </head>
+  <body>
+
+    <script>
+      function wordBuilder(wordToSpell) {
+        var newWord = ''
+        var result = []
+        for(var i = 0; i < wordToSpell.length; i++) {
+          newWord += wordToSpell[i]
+          result.push(newWord);
+        }
+        return result
+      }
+    </script>
+  </body>
+</html>
