@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payscale Analyzer</title>
+  </head>
+  <body>
+
+    <script>
+      var array = [4,2,4,1,1,100]
+
+      function payscaleAnalyzer(payList) {
+        var highestPay = 0
+        var lowestPay = Infinity
+        for(var i = 0; i < payList.length; i++) {
+          highestPay = Math.max(highestPay, payList[i])
+          lowestPay = Math.min(lowestPay, payList[i])
+        } return (highestPay - lowestPay)
+      }
+    </script>
+  </body>
+</html>
